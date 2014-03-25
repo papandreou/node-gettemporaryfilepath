@@ -1,25 +1,31 @@
 {
-    "name": "gettemporaryfilepath",
-    "version": "0.0.1",
-    "description": "Generate temporary file names in your OS' temporary dir",
-    "main": "lib/getTemporaryFilePath.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/papandreou/node-gettemporaryfilepath.git"
-    },
-    "keywords": [
-        "temporary",
-        "tmp",
-        "temp",
-        "os",
-        "tempdir",
-        "windows",
-        "linux",
-        "osx"
-    ],
-    "author": "Andreas Lind Petersen <andreas@one.com>",
-    "license": "BSD"
+  "name": "gettemporaryfilepath",
+  "version": "0.0.1",
+  "description": "Generate temporary file names in your OS' temporary dir",
+  "main": "lib/getTemporaryFilePath.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/papandreou/node-gettemporaryfilepath.git"
+  },
+  "keywords": [
+    "temporary",
+    "tmp",
+    "temp",
+    "os",
+    "tempdir",
+    "windows",
+    "linux",
+    "osx"
+  ],
+  "author": "Andreas Lind Petersen <andreas@one.com>",
+  "license": "BSD",
+  "devDependencies": {
+    "mocha": "=1.18.2",
+    "sinon": "=1.9.0",
+    "unexpected": "=3.0.1",
+    "unexpected-sinon": "=3.0.0"
+  }
 }
