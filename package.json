@@ -20,7 +20,7 @@
     "linux",
     "osx"
   ],
-  "author": "Andreas Lind Petersen <andreas@one.com>",
+  "author": "Andreas Lind <andreaslindpetersen@gmail.com>",
   "license": "BSD",
   "devDependencies": {
     "mocha": "=1.18.2",
