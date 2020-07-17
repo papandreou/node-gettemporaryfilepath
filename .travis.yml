@@ -11,5 +11,5 @@ matrix:
       node_js: 14
       script: npm run lint
 
-script: '(nvm i 14 && npm run build) && npm run ci:test'
+script: npm run ci:test
 after_success: '<coverage/lcov.info ./node_modules/coveralls/bin/coveralls.js'
