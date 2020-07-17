@@ -7,7 +7,7 @@
     "test": "mocha",
     "lint": "eslint . && prettier --check '**/*.{js,md}'",
     "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html",
-    "test:ci": "npm run coverage"
+    "ci:test": "npm run coverage"
   },
   "repository": {
     "type": "git",
