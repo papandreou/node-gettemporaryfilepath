@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - '10'
+  - '12'
+  - '14'
+  - node
+
+matrix:
+  include:
+    - name: Lint
+      node_js: 14
+      script: npm run lint
+
+script: '(nvm i 14 && npm run build) && npm run ci:test'
+after_success: '<coverage/lcov.info ./node_modules/coveralls/bin/coveralls.js'

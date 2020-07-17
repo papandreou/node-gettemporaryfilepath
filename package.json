@@ -4,7 +4,10 @@
   "description": "Generate temporary file names in your OS' temporary dir",
   "main": "lib/getTemporaryFilePath.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint . && prettier --check '**/*.{js,md}'",
+    "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html",
+    "test:ci": "npm run coverage"
   },
   "repository": {
     "type": "git",
@@ -23,7 +26,19 @@
   "author": "Andreas Lind <andreaslindpetersen@gmail.com>",
   "license": "BSD",
   "devDependencies": {
+    "coveralls": "^3.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-markdown": "^1.0.2",
+    "eslint-plugin-mocha": "^7.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "mocha": "^5.2.0",
+    "nyc": "^15.1.0",
+    "prettier": "^2.0.5",
     "sinon": "^9.0.2",
     "unexpected": "=3.0.1",
     "unexpected-sinon": "=3.0.0"
