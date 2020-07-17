@@ -1,6 +1,6 @@
 {
   "name": "gettemporaryfilepath",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate temporary file names in your OS' temporary dir",
   "main": "lib/getTemporaryFilePath.js",
   "scripts": {
