@@ -1,10 +1,9 @@
-node-gettemporaryfilepath
-=========================
+# node-gettemporaryfilepath
 
 Generate file names for temporary files:
 
 ```javascript
-var getTemporaryFilePath = require('gettemporaryfilepath');
+var getTemporaryFilePath = require("gettemporaryfilepath");
 
 getTemporaryFilePath(); // "/tmp/112116-2662-18u8bl8"
 getTemporaryFilePath(); // "/tmp/112116-2662-1inp07r"
@@ -18,20 +17,17 @@ href="https://github.com/bruce/node-temp#affixes">node-temp</a> (from
 which most of the code was taken):
 
 ```javascript
-getTemporaryFilePath({suffix: '.png'}); // "/tmp/112116-2662-125a83d.png"
-getTemporaryFilePath({prefix: 'foo-'}); // "/tmp/foo-112116-2662-avhu28"
+getTemporaryFilePath({ suffix: ".png" }); // "/tmp/112116-2662-125a83d.png"
+getTemporaryFilePath({ prefix: "foo-" }); // "/tmp/foo-112116-2662-avhu28"
 ```
 
-Installation
-------------
+## Installation
 
 Make sure you have node.js and npm installed, then run:
 
     npm install gettemporaryfilepath
 
-
-License
--------
+## License
 
 Based on <a href="https://github.com/bruce/node-temp#affixes">node-temp</a>
 and licensed under the 3-clause BSD license -- see the `LICENSE` file for
