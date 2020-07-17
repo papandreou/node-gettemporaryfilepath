@@ -1,8 +1,8 @@
-var unexpected = require('unexpected'),
-    getTemporaryFilePath = require('../lib/getTemporaryFilePath'),
-    sinon = require('sinon'),
-    fs = require('fs'),
-    os;
+var unexpected = require('unexpected');
+    var getTemporaryFilePath = require('../lib/getTemporaryFilePath');
+    var sinon = require('sinon');
+    var fs = require('fs');
+    var os;
 
 try {
     os = require('os');
